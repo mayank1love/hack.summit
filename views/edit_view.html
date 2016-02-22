@@ -1,0 +1,81 @@
+<h1>Edit Your PrSnL</h1>
+<form id="edit">
+
+    
+            <div class="row">
+            <div class="col-md-5">
+            <label for="mpassword">Enter Master Password to Confirm Changes</label>
+            <input type="password" id="mpassword" name="mpassword" placeholder="Master Password" class="form-control" required>
+            </div>
+            <div class="col-md-5">
+            <button class="btn-danger" ng-click="deletePrsnl()">Delete Your PrNsL</button>
+            </div>
+            </div>
+            
+            <label for="mobile">Mobile Number</label>
+            <input type="Number" id="mobile" name="mobile" placeholder="Mobile Number" class="form-control" value="{{response.mobile}}" readonly>
+     
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="First Name" class="form-control" value="{{response.fname}}" required>
+            <label for="lname">Last Name</label>
+            <input type"text" id="lname" name="lname" placeholder="Last Name" class="form-control" value="{{response.lname}}" required>
+            <label for="dob">Date Of Birth</label>
+            <input type="date" id="dob" name="dob" class="form-control" value="{{response.dob}}" required>
+            <label for="sex">Sex</label>
+            <select id="sex" name="sex" form="reg" class="form-control" value="{{response.sex}}" required>
+                <option value="M">Male 
+                <option value="F">Female
+            </select>
+            <label for="email">E-mail address</label>
+            <input type="email" id="email" name="email" placeholder="E-mail Address" class="form-control" value="{{response.email}}" required>
+            <label for="address">Full Address</label>
+            <textarea name="address" id=address placeholder="Full Address" rows="8" cols="40" class="form-control" required>{{response.address}}</textarea>
+            
+            <div class="row">
+            <div class="col-md-4">
+            <label for="twitter">Twitter</label>
+            <input type="text" id="twitter" name="twitter" placeholder="Twitter" class="form-control" value="{{response.twitter}}">  
+            </div>
+            <div class="col-md-4">
+            <label for="facebook">Facebook</label>
+            <input type="text" id="facebook" name="facebook" placeholder="Facebok" class="form-control" value="{{response.facebook}}">   
+            </div>
+            <div class="col-md-4">
+            <label for="gplus">Google Plus</label>
+            <input type="text" id="gplus" name="gplus" placeholder="Google Plus" class="form-control" value="{{response.gplus}}">
+            </div>
+            </div>
+            
+            <div class="row">
+            <div class="col-md-4">
+            <label for="linkedin">LinkedIn</label>
+            <input type="text" id="linkedin" name="linkedin" placeholder="LinkedIn" class="form-control" value="{{response.linkedin}}">  
+            </div>
+            <div class="col-md-4">
+            <label for="instagram">Instagram</label>
+            <input type="text" id="instagram" name="instagram" placeholder="Instagram" class="form-control" value="{{response.instagram}}">   
+            </div>
+            <div class="col-md-4">
+            <label for="youtube">Youtube</label>
+            <input type="text" id="youtube" name="youtube" placeholder="Youtube" class="form-control" value="{{response.youtube}}">
+            </div>
+            </div>
+            
+            <div class="row">
+            <div class="col-md-4">
+            <label for="pin1">Profile Data Passphrase</label>
+            <input type="text" id="pin1" name="pin1" placeholder="Profile Data Passphrase" class="form-control" value="{{response.pin1}}" required>  
+            </div>
+            <div class="col-md-4">
+            <label for="pin2">Social Network Passphrase</label>
+            <input type="text" id="pin2" name="pin2" placeholder="Social Network Passphrase" class="form-control" value="{{response.pin2}}" required>   
+            </div>
+            <div class="col-md-4">
+            <label for="pin3">Full Access Passphrase</label>
+            <input type="text" id="pin3" name="pin3" placeholder="Full Access Passphrase" class="form-control"  value="{{response.pin3}}" required>
+            </div>
+            </div>
+            <br><br>
+            <input type="button" value="Submit" ng-click="editConfirmPrsnl()" class="btn-info form-control">
+            
+</form>

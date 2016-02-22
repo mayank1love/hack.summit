@@ -1,0 +1,16 @@
+<h3 ng-show="response.fname">PrSnL Data for {{response.fname}} {{response.lname}}</h3>
+<h4 ng-show="response.fname">Mobile Number : {{response.mobile}}</h4>
+<h4 ng-show="response.fname">Name : {{response.fname}} {{response.lname}}</h4>
+<h4 ng-show="response.dob">Date Of Birth : {{response.dob}}</h4>
+<h4 ng-show="response.sex">Sex : {{response.sex == 'M' ? 'Male' : 'Female'}}</h4>
+<h4 ng-show="response.email">E-Mail : {{response.email}}</h4>
+<h4 ng-show="response.address">Address: {{response.address}}</h4>
+<center ng-show="response.fname"><qr text="qr"></qr></center>
+<!--<h3 ng-show="response.fname" ng-show="!response.twitter" ng-show="!response.facebook" ng-show="!response.gplus" ng-show="!response.linkedin" ng-show="!response.instagram" ng-show="!response.youtube">No Social Network Data Set</h3>-->
+<h3 ng-show="response.twitter" ng-show="response.facebook" ng-show="response.gplus" ng-show="response.linkedin" ng-show="response.instagram" ng-show="response.youtube">Social Media</h3>
+<h4 ng-show="response.twitter">Twitter : {{response.twitter}}</h4>
+<h4 ng-show="response.facebook">Facebook : {{response.facebook}}</h4>
+<h4 ng-show="response.gplus">Google+ : {{response.gplus}}</h4>
+<h4 ng-show="response.linkedin">LinkedIn : {{response.linkedin}}</h4>
+<h4 ng-show="response.instagram">Instagram : {{response.instagram}}</h4>
+<h4 ng-show="response.youtube">Youtube : {{response.youtube}}</h4>
